@@ -134,6 +134,7 @@ input {
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   text-align: start;
+  margin: 0;
 }
 
 #main-bar1 {
@@ -156,7 +157,6 @@ input {
 
 #main-bar5 {
   grid-area: main-bar5;
-  background: white;
 }
 
 #main-bar6 {
@@ -185,4 +185,21 @@ input {
 
 .ul-link {
   background: white;
+  border-radius: 8px;
+}
+
+.announ {
+  background: white;
+  border-radius: 8px;
+  
+}
+
+.announ p {
+  border-top: 2px solid grey;
+  padding: 11px 0;
+  margin: 0;
+}
+
+.announcement {
+  line-height: 1.5;
 }
