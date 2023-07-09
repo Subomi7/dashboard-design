@@ -1,247 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dashboard layout</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/1f1a45f7a5.js"
       crossorigin="anonymous"
     ></script>
+    <title>Dashboard</title>
   </head>
   <body>
-    <div class="main-container">
-      <div class="side-bar card" id="card1">
-        <div id="side-bar1">
-          <ul>
-            <li>
-              <i class="fa-solid fa-bars"></i>
-              Dashboard
-            </li>
-          </ul>
+    <header class="header">
+      <div class="top-header">
+        <div class="form">
+          <i class="fa-solid fa-magnifying-glass"></i> <input type="text" />
         </div>
-        <div id="side-bar2">
-          <ul>
-            <li>
-              <i class="fa-solid fa-house"></i>
-              Home
-            </li>
-            <li>
-              <i class="fa-solid fa-address-card"></i>
-              Profile
-            </li>
-            <li>
-              <i class="fa-solid fa-message"></i>
-              Message
-            </li>
-            <li>
-              <i class="fa-solid fa-clock"></i>
-              History
-            </li>
-            <li>
-              <i class="fa-solid fa-bars-progress"></i>
-              Tasks
-            </li>
-            <li>
-              <i class="fa-solid fa-people-roof"></i>
-              Communities
-            </li>
-          </ul>
-        </div>
-        <div id="side-bar3">
-          <ul>
-            <li>
-              <i class="fa-solid fa-gear"></i>
-              Settings
-            </li>
-            <li>
-              <i class="fa-solid fa-clipboard-question"></i>
-              Support
-            </li>
-            <li>
-              <i class="fa-solid fa-lock"></i>
-              Privacy
-            </li>
-          </ul>
+        <div class="notification">
+          <div class="icon">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-sharp fa-solid fa-shield-cat"></i>
+          </div>
+          <div class="paragraph"><h4>Moromo Olusanjo</h4></div>
         </div>
       </div>
-      <div class="top-bar card" id="card2">
-        <div class="top-bar1">
-          <div class="form">
-            <i class="fa-solid fa-magnifying-glass"></i> <input type="text" />
-          </div>
-          <div class="notification">
-            <i
-              class="fa-solid fa-bell"
-              style="font-size: 13px; color: blue; padding: 1rem"
-            ></i>
+      <div class="lower-header">
+        <div class="profile">
+          <div>
             <i
               class="fa-sharp fa-solid fa-shield-cat"
-              style="font-size: 17px; color: rgb(112, 112, 46); padding: 1.5rem"
+              style="font-size: 55px; padding: 1rem; color: rgb(112, 112, 46)"
             ></i>
-            <h4>Morgan Oakly</h4>
+          </div>
+          <div>
+            <h6>Hi there,</h6>
+            <h3>Moromo Olusanjo (@morgan)</h3>
           </div>
         </div>
-        <div class="top-bar2">
-          <div class="profile">
-            <div>
-              <i
-                class="fa-sharp fa-solid fa-shield-cat"
-                style="font-size: 35px; padding: 1rem; color: rgb(112, 112, 46)"
-              ></i>
-            </div>
-            <div>
-              <h6>Hi there,</h6>
-              <h3>Morgan Oakly (@morgan)</h3>
-            </div>
-          </div>
-          <div class="added">
-            <p>News</p>
-            <p>Upload</p>
-            <p>Share</p>
-          </div>
+        <div class="button">
+          <button>News</button>
+          <button>Upload</button>
+          <button>Share</button>
         </div>
       </div>
-      <div class="main-bar card" id="card3">
-        <div id="main-bar1" class="nav">
-          <h4>Your Projects</h4>
-        </div>
-        <div id="main-bar3" class="cards">
+    </header>
+
+    <section class="sidebar">
+      <div class="dashboard">
+        <ul>
+          <li>
+            <i class="fa-solid fa-bars"></i>
+            Dashboard
+          </li>
+        </ul>
+      </div>
+      <div class="home">
+        <ul>
+          <li>
+            <i class="fa-solid fa-house"></i>
+            Home
+          </li>
+          <li>
+            <i class="fa-solid fa-address-card"></i>
+            Profile
+          </li>
+          <li>
+            <i class="fa-solid fa-message"></i>
+            Message
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            History
+          </li>
+          <li>
+            <i class="fa-solid fa-bars-progress"></i>
+            Tasks
+          </li>
+          <li>
+            <i class="fa-solid fa-people-roof"></i>
+            Communities
+          </li>
+        </ul>
+      </div>
+      <div class="settings">
+        <ul>
+          <li>
+            <i class="fa-solid fa-gear"></i>
+            Settings
+          </li>
+          <li>
+            <i class="fa-solid fa-clipboard-question"></i>
+            Support
+          </li>
+          <li>
+            <i class="fa-solid fa-lock"></i>
+            Privacy
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <main class="main">
+      <div class="card card1" id="card1">
+        <div><h3>Your Project</h3></div>
+        <div><h3>Announcement</h3></div>
+      </div>
+      <div class="card card2" id="card2">
+        <div>
           <h4>Super Cool Project</h4>
-          <p>This is a super cool Project sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
-            sem purus dgjkxb kxbjfvkjs kjfbjg</p>
-          <div class="card-icon">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-solid fa-eye"></i>
-            <i class="fa-sharp fa-solid fa-code-fork"></i>
-          </div>
-        </div>
-        <div id="main-bar4" class="cards">
-          <h4>Less Cool Project</h4>
           <p>
-            nullam condimenttum ipsum ut lectus vehicula consectetur. Quisque
-            sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
-            sem purus
+            This is a super cool Project sed dolor tincidunt, consectetur sapien
+            et, faciliisi dolor. Duis sem purus dgjkxb kxbjfvkjs kjfbjg
           </p>
-          <div class="card-icon">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-solid fa-eye"></i>
-            <i class="fa-sharp fa-solid fa-code-fork"></i>
-          </div>
         </div>
-        <div id="main-bar5" class="cards">
-          <h4>Announcements</h4>
-          <div class="announ">
-            <h6 class="announcement">Site Maintenance</h6>
-            <p>
-              nullam condimenttum ipsum ut lectus vehicula consectetur. Quisque
-              sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
-              sem purus
-            </p>
-            <h6 class="announcement">Site Maintenance</h6>
-            <p>
-              nullam condimenttum ipsum ut lectus vehicula consectetur. Quisque
-              sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
-              sem purus
-            </p>
-            <h6 class="announcement">Site Maintenance</h6>
+        <div class="card-icon">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-sharp fa-solid fa-code-fork"></i>
+        </div>
+      </div>
+      <div class="card card3" id="card3">
+        <div>
+          <h4>Super Cool Project</h4>
+          <p>
+            This is a super cool Project sed dolor tincidunt, consectetur sapien
+            et, faciliisi dolor. Duis sem purus dgjkxb kxbjfvkjs kjfbjg
+          </p>
+        </div>
+        <div class="card-icon">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-sharp fa-solid fa-code-fork"></i>
+        </div>
+      </div>
+      <div class="card card4" id="card4">
+        <div class="announ">
+          <div class="announcement">
+            <h5>Site Maintenance</h5>
             <p>
               nullam condimenttum ipsum ut lectus vehicula consectetur. Quisque
               sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
               sem purus
             </p>
           </div>
-        </div>
-        <div id="main-bar6" class="cards">
-          <h4>Impossible App</h4>
-          <p>
-            nullam condimenttum ipsum ut lectus vehicula consectetur. Quisque
-            sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
-            sem purus
-          </p>
-          <div class="card-icon">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-solid fa-eye"></i>
-            <i class="fa-sharp fa-solid fa-code-fork"></i>
+          <div class="announcement">
+            <h5>Site Maintenance</h5>
+            <p>
+              nullam condimenttum ipsum ut lectus vehicula consectetur. Quisque
+              sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
+              sem purus
+            </p>
+          </div>
+          <div class="announcement">
+            <h5>Site Maintenance</h5>
+            <p>
+              nullam condimenttum ipsum ut lectus vehicula consectetur. Quisque
+              sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
+              sem purus
+            </p>
           </div>
         </div>
-        <div id="main-bar7" class="cards">
-          <h4>Easy Peasy App</h4>
-          <p>
-            nullam condimenttum ipsum ut lectus vehicula consectetur. Quisque
-            sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
-            sem purus
-          </p>
-          <div class="card-icon">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-solid fa-eye"></i>
-            <i class="fa-sharp fa-solid fa-code-fork"></i>
-          </div>
+        <div class="trending">
+          <div class="trend">
+          <h2>Trending</h2>
         </div>
-        <div id="main-bar8" class="cards">
-          <h4>Ad Blocker</h4>
-          <p>
-            nullam condimenttum ipsum ut lectus vehicula consectetur. Quisque
-            sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
-            sem purus
-          </p>
-          <div class="card-icon">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-solid fa-eye"></i>
-            <i class="fa-sharp fa-solid fa-code-fork"></i>
-          </div>
-        </div>
-        <div id="main-bar9" class="cards">
-          <h4>Money Maker</h4>
-          <p>
-            nullam condimenttum ipsum ut lectus vehicula consectetur. Quisque
-            sed dolor tincidunt, consectetur sapien et, faciliisi dolor. Duis
-            sem purus
-          </p>
-          <div class="card-icon">
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-solid fa-eye"></i>
-            <i class="fa-sharp fa-solid fa-code-fork"></i>
-          </div>
-        </div>
-        <div id="main-bar10" class="cards">
-          <h4>Trending</h4>
           <ul class="ul-link">
             <li>
               <i
                 class="fa-sharp fa-solid fa-horse-head"
-                style="font-size: 17px; color: rgb(112, 112, 46)"
               ></i
               ><strong>@inioluwa</strong><br />World peace builder
             </li>
             <li>
               <i
                 class="fa-sharp fa-solid fa-shield-cat"
-                style="font-size: 17px; color: rgb(112, 112, 46)"
-                ;
               ></i
               ><strong>@ifeoluwa</strong><br />World peace builder
             </li>
             <li>
               <i
                 class="fa-solid fa-hippo"
-                style="font-size: 17px; color: rgb(112, 112, 46)"
-                ;
               ></i
               ><strong>@oluwole</strong><br />World peace builder
             </li>
             <li>
               <i
                 class="fa-solid fa-circle-user"
-                style="font-size: 17px; color: rgb(112, 112, 46)"
-                ;
               ></i
               ><strong>@tobiloba</strong><br />World peace builder
             </li>
           </ul>
         </div>
       </div>
-    </div>
+      <div class="card card5" id="card5">
+        <div>
+          <h4>Super Cool Project</h4>
+          <p>
+            This is a super cool Project sed dolor tincidunt, consectetur sapien
+            et, faciliisi dolor. Duis sem purus dgjkxb kxbjfvkjs kjfbjg
+          </p>
+        </div>
+        <div class="card-icon">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-sharp fa-solid fa-code-fork"></i>
+        </div>
+      </div>
+      <div class="card card6" id="card6">
+        <div>
+          <h4>Super Cool Project</h4>
+          <p>
+            This is a super cool Project sed dolor tincidunt, consectetur sapien
+            et, faciliisi dolor. Duis sem purus dgjkxb kxbjfvkjs kjfbjg
+          </p>
+        </div>
+        <div class="card-icon">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-sharp fa-solid fa-code-fork"></i>
+        </div>
+      </div>
+      <div class="card card7" id="card7">
+        <div>
+          <h4>Super Cool Project</h4>
+          <p>
+            This is a super cool Project sed dolor tincidunt, consectetur sapien
+            et, faciliisi dolor. Duis sem purus dgjkxb kxbjfvkjs kjfbjg
+          </p>
+        </div>
+        <div class="card-icon">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-sharp fa-solid fa-code-fork"></i>
+        </div>
+      </div>
+      <div class="card card8" id="card8">
+        <div>
+          <h4>Super Cool Project</h4>
+          <p>
+            This is a super cool Project sed dolor tincidunt, consectetur sapien
+            et, faciliisi dolor. Duis sem purus dgjkxb kxbjfvkjs kjfbjg
+          </p>
+        </div>
+        <div class="card-icon">
+          <i class="fa-regular fa-star"></i>
+          <i class="fa-solid fa-eye"></i>
+          <i class="fa-sharp fa-solid fa-code-fork"></i>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
