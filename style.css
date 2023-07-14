@@ -1,13 +1,16 @@
 body {
   height: 100vh;
 
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+
   width: 100vw;
 
   margin-bottom: 25rem;
 
   display: grid;
 
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 250px 1fr;
 
   grid-template-rows: 150px 1fr;
 }
@@ -18,7 +21,6 @@ body {
   grid-column: 2 / 3;
 
   grid-row: 1 / 2;
-  
 
   display: grid;
   grid-template-rows: 75px 75px;
@@ -26,14 +28,16 @@ body {
 
 .notification {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  margin-right: 1.7em;
   align-items: center;
   gap: 7px;
 }
 
-.icon{
+.icon {
   font-size: 13px;
   color: black;
+  margin-right: 2em;
 }
 
 .paragragh {
@@ -44,7 +48,7 @@ body {
 .form {
   padding-left: 1rem;
 }
-input[type="text"] {
+input[type='text'] {
   width: 29vw;
   height: 3vh;
   border: none;
@@ -53,13 +57,13 @@ input[type="text"] {
   background-color: #e2e8f0;
 }
 
-.top-header{
+.top-header {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
 }
 
-.lower-header{
+.lower-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,12 +104,13 @@ button {
   grid-template-rows: 75px 300px 1fr;
 }
 
-.dashboard{
+.dashboard {
   font-size: 20px;
   font-style: bold;
 }
 
-.home, .settings {
+.home,
+.settings {
   font-size: 18px;
   font-style: bold;
 }
@@ -124,40 +129,46 @@ li {
 
 .main {
   background-color: #c3c5ca;
-  padding: 25px;
+  padding: 55px;
 
   grid-column: 2 / 3;
-  
+
   grid-row: 2 / 3;
 
   display: grid;
   grid-template-columns: 1fr 1fr 350px;
-  grid-template-rows: 80px 1fr 1fr 1fr;
+  grid-template-rows: 25px 1fr 1fr 1fr;
   gap: 20px;
-  grid-template-areas: 
-    "card1 card1 card1"
-    "card2 card3 card4"
-    "card5 card6 card4"
-    "card7 card8 card4";
+  grid-template-areas:
+    'card1 card1 card1'
+    'card2 card3 card4'
+    'card5 card6 card4'
+    'card7 card8 card4';
 }
 
 .card {
   border-radius: 10px;
-  padding: 4px;
+}
+
+.project-body {
+  color: #7f7f7f;
 }
 
 .card1 {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  margin-right: 13em;
 }
 
 .card4 {
   display: grid;
-  grid-template-rows: 1fr 1fr; 
+  grid-template-rows: 1fr 1fr;
   gap: 1px;
 }
 
 .announ {
+  padding: rem;
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 4rem;
@@ -166,27 +177,35 @@ li {
 .ul-link {
   background-color: #fff;
   border-radius: 10px;
+  padding-top: 2em;
+}
+
+.ul-link > li > i {
+  font-size: 37px;
+  color: rgb(112, 112, 46);
+  padding-right: 0.6em;
 }
 
 .ul-link > li {
-  font-size: 17px;
-  color: rgb(112, 112, 46)
+  display: flex;
+  padding: 2em;
 }
 
 .trending {
   background-color: #fff;
-  background-image: linear-gradient(
-    #c3c5ca 0%,
-    #c3c5ca 10%,
-    #fff 10%
-  );
+  background-image: linear-gradient(#c3c5ca 0%, #c3c5ca 10%, #fff 10%);
   border-radius: 10px;
 }
 
-.trend{
+.trend {
   background-color: #c3c5ca;
 }
-.card2, .card3, .card5, .card6, .card7, .card8{
+.card2,
+.card3,
+.card5,
+.card6,
+.card7,
+.card8 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -211,7 +230,6 @@ li {
 
 #card4 {
   grid-area: card4;
-  
 }
 
 #card5 {
@@ -240,7 +258,13 @@ li {
 }
 
 .announcement {
-  line-height: 1.2vh;
+  line-height: 2vh;
   border-top: 1px solid #c3c5ca;
-  padding: 5px;
+  padding: 13px;
+}
+
+.card-icon {
+  display: flex;
+  padding-right: 2rem;
+  gap: 2em;
 }
